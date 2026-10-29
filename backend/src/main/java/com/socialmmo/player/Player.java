@@ -8,7 +8,7 @@ import java.util.UUID;
 @Table(name = "players")
 public class Player {
     @Id
-    @Column(length = 36, nullable = false)
+    @Column(name = "id", nullable = false, columnDefinition = "CHAR(36)")
     private String id;
 
     @Column(name = "steam_id", length = 32, nullable = false, unique = true)
